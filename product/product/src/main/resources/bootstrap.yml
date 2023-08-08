@@ -1,0 +1,17 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: productMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        fail-fast: true
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profileSeparator: "::"
+        format: YAML
+

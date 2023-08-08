@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: identityMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost

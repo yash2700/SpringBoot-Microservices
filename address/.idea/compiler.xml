@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Account" />
+        <module name="product" />
+        <module name="identityService" />
+        <module name="address" />
+        <module name="bookMS" />
+        <module name="inventory" />
+        <module name="cart" />
+        <module name="ApiGateway" />
+        <module name="order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Account" target="17" />
+      <module name="address" target="17" />
+      <module name="ApiGateway" target="17" />
+      <module name="bookMS" target="17" />
+      <module name="cart" target="17" />
+      <module name="identityService" target="17" />
+      <module name="inventory" target="17" />
+      <module name="order" target="17" />
+      <module name="product" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Account" options="-parameters" />
+      <module name="ApiGateway" options="-parameters" />
+      <module name="address" options="-parameters" />
+      <module name="bookMS" options="-parameters" />
+      <module name="cart" options="-parameters" />
+      <module name="identityService" options="-parameters" />
+      <module name="inventory" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="product" options="-parameters" />
+    </option>
+  </component>
+</project>

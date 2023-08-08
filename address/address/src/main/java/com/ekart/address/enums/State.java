@@ -1,0 +1,29 @@
+package com.ekart.address.enums;
+
+public enum State {
+    ANDHRAPRADESH,
+    TAMILNADU,
+    ASSAM,BIHAR,JHARKHAND,
+    UTTARPRADESH,
+    MAHARASTRA,
+    MADHYAPRADESH,
+    KERALA,
+    KARNATAKA,
+    PUNJAB,
+    MIZORAM,
+    RAJASTAN,
+    ARUNACHALPRADESH,
+    TRIPURA,
+    WESTBENGAL,
+    NAGALAND,
+    ODISHA,
+    SIKKIM,
+    HARYANA,
+    CHANDIGARH,
+    GUJARAT,
+    CHATTISGARH,
+    MANIPUR,
+    MEGHALAYA,
+    UTTARAKHAND,
+    J_K;
+}

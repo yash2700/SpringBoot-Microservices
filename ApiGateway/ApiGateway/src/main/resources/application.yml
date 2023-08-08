@@ -1,0 +1,70 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: AccountMS
+          uri: lb://AccountMS
+          predicates:
+            - Path=/account/**
+          filters:
+            - AuthenticationFilter
+
+        - id: addressMS
+          uri: lb://addressMS
+          predicates:
+            - Path=/address/**
+          filters:
+            - AuthenticationFilter
+
+        - id: cartMS
+          uri: lb://cartMS
+          predicates:
+            - Path=/cart/**
+          filters:
+            - AuthenticationFilter
+        - id: inventoryMS
+          uri: lb://inventoryMS
+          predicates:
+            - Path=/inventory/**
+          filters:
+            - AuthenticationFilter
+
+        - id: orderMS
+          uri: lb://orderMS
+          predicates:
+            - Path=/order/**
+          filters:
+            - AuthenticationFilter
+
+        - id: productMS
+          uri: lb://productMS
+          predicates:
+            - Path=/product/**
+          filters:
+            - AuthenticationFilter
+
+        - id: identityMS
+          uri: lb://identityMS
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AuthenticationFilter
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+  endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
